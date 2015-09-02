@@ -14,6 +14,7 @@ class UsingCollections
 		while (iterator.hasNext())
 		{
 			System.out.println((String)iterator.next());
+			//faculty saying there's a method call get() for simplifying this procedure :) wonder what that means!
 		}
 		hashTable = new Hashtable();
 		hashTable.put("Albert", new Double(3343.5));
