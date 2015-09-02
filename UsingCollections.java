@@ -7,6 +7,14 @@ class UsingCollections
 		Hashtable hashTable;
 		Enumeration names;
 		double db;
+		List list = new ArrayList();
+		list.add("Samuel");
+		list.add("Adeshina");
+		Iterator iterator = list.iterator();
+		while (iterator.hasNext())
+		{
+			System.out.println((String)iterator.next());
+		}
 		hashTable = new Hashtable();
 		hashTable.put("Albert", new Double(3343.5));
 		hashTable.put("Tom", new Double(454.4));
