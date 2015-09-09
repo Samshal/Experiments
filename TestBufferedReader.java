@@ -16,7 +16,19 @@ public class TestBufferedReader
 			System.out.println("Sorry, could not read from the keyboard");
 		}
 
-		System.out.println("The text entered is: " );
-		System.out.println(str);
+		//System.out.println("The text entered is: " );
+		//System.out.println(str);
+		try
+		{
+			File f = new File("C:/Test/writer.txt");
+			FileWriter writer = new FileWriter(f);
+			System.out.println("The text entered has been writtem into " + f.getName());
+			writer.write(str);
+			writer.close();
+		}
+		catch(Exception e)
+		{
+			System.out.println("Error!!!!!!!");
+		}
 	}
 }
