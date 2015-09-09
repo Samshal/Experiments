@@ -8,5 +8,6 @@ class EmployeeTest
 		Employee emp = new Employee();
 		emp.setName(args[0]);
 		System.out.println("Employee Name is "+ emp.getName());
+		//Wonder what this does
 	}
 }
